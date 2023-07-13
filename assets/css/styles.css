@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
 }
@@ -48,10 +52,13 @@ a {
   position: sticky;
   top: -26px;
   background: #e6f0ff;
-  padding: 26px;
+  padding-top: 26px;
 }
-header {
+.hero-wrap {
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
   background: #e6f0ff;
 }
@@ -94,10 +101,7 @@ header {
   border-radius: 8px;
   margin-left: 1.8rem;
 }
-/* hero */
-.hero {
-  padding: 140px;
-}
+
 .hero .info {
   /* Lấy width của content : width của toàn bộ thẻ hero  */
   width: 51%;
